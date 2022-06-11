@@ -1,3 +1,4 @@
+// https://github.com/jsoto007/phase-1-practice-interacting-with-the-dom
 const timerNode = document.getElementById('counter')
 const form = document.querySelector('form');
 
@@ -16,11 +17,6 @@ form.addEventListener('submit', (e) => {
 })
 
 
-document.getElementById('list').addEventListener('click', (e) => {
-    e.remove()
-})
-
-
 function timerCounter() {
     setInterval(function () {
         let int = parseInt(timerNode.innerText);
@@ -29,7 +25,3 @@ function timerCounter() {
     }, 1000);
 }
 timerCounter()
-
-function handleSubmit() {
-    const submit = document.getElementById("comment-input")
-}
